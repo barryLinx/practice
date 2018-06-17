@@ -1,0 +1,210 @@
+body,html{
+  background-color: #F2F2F2 ;
+}
+
+.img-thumbnail{
+  width: 220px;
+  height: 220px;
+}
+
+.title{
+  color: #9013FE;
+  font-size:36px;
+  font-family: Roboto-Bold;
+}
+
+.tab{
+  position: relative;
+  background-color: #FFFFFF; 
+  margin-bottom: 20px;
+  
+}
+.content{
+  font-family: Roboto-Regular;
+  line-height: 24px;
+  font-size:16px;
+  overflow: hidden;
+}
+.cotent-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+}
+.Show{
+  font-size: 24px;
+  font-family: Roboto-Regular;
+}
+.ShowCount{
+  color: #7828B4;
+  font-family: Roboto-Bold;
+}
+
+
+.bg-purple{
+  background-color: #7828B4;
+}
+.bg-local{
+  background-color: #EBEBEB; 
+  border-bottom:2px solid  #D7D7D7;
+  font-size: 20px;
+  font-family: Roboto-Bold;
+  font-weight:bold;
+  padding: 35px;
+ 
+}
+
+.nav-container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.brand{  
+  display: flex;
+  justify-content: start; 
+  margin-left: 60px;
+}
+
+.serach{
+  color: #F2F2F2;
+  border-style: none;
+  font-size: 20px;
+  width: 400px;
+  background-color: transparent;
+}
+.seacher{
+  background-color: transparent;
+  color: #F2F2F2;
+  border-bottom:1px solid #F2F2F2;
+  margin-left: 180px ;
+}
+
+.btn-icon{
+  color: #F2F2F2;
+  border-style: none;
+  background-color: transparent;
+}
+
+.btn-local{
+  color: #9B9B9B;
+  background-color: transparent;
+}
+
+.badge-bg{
+  color: #9013FE;
+  background-color: #F2F2F2;
+  font-family: Roboto-Italic;
+  font-size:16px;
+  border-radius: 45px;
+  padding: 5px 15px;
+  border:1px solid #7828B4;
+}
+
+.badge-bg:hover{
+  background-color: #9013FE;
+  color: #F2F2F2;
+}
+
+.badge-content{
+  color: #fff;
+  background-color: #D7D7D7;
+  font-size: 16px;
+  font-family: Roboto-Italic;
+  border-radius: 45px;
+  padding: 5px 15px;
+}
+
+/* 
+    max-width 最大寬度 以下以內 設置樣式
+    min-width 最小寬度 以上 
+*/
+.page-link{
+  color: #9013FE;
+}
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #9013FE;
+  border-color: #9013FE;
+}
+
+.local-organizer{
+  font-size:16px;
+  font-family:  Roboto-Bold;
+  color: #000000;
+}
+
+.local-date{
+  font-size:16px;
+  font-family:  Roboto-Regular;
+  color: #9B9B9B ;
+}
+
+.Categories{
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 35px;
+  margin-bottom: 12px;  
+  font-size: 16px;
+}
+
+.Categories input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.Categories:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.Categories input:checked ~ .checkmark {
+  background-color: #9013FE;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.Categories:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.Categories input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.Categories .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px; 
+  border:  solid #fff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+}
+
+@media only screen and (min-width:  576px){
+  .btn-sm-collapse{
+     display: none;
+  }
+  .collapse-show{
+    display: inline-block;
+  }
+}
+
